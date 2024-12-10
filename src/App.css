@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f0e8;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.listaRendering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #89a8b2;
+  padding: 5rem;
+}
+
+li {
+  list-style-type: none;
+}
