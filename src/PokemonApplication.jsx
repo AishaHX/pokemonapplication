@@ -46,12 +46,15 @@ function PokemonApplication() {
 
   return (
     <div className="pokemonContainer">
+      <h2> Select Pokémon to see Details</h2>
+
       <select
         id=""
         onChange={(e) => setSelectedPokemon(e.target.value)}
         value={selectedPokemon}
       >
         <option>Select Pokemon</option>
+
         {pokemonLista.map((pokemon) => (
           <option key={pokemon.name} value={pokemon.name}>
             {pokemon.name}

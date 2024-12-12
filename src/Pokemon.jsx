@@ -4,13 +4,10 @@ const Pokemon = ({ Data }) => {
   const { name, sprites, types, weight, height } = Data;
   return (
     <div className="pokemonCard">
-      <img src={sprites.front_default} />
-
-      <p>Namn: {name}</p>
-
-      <p>Type: {types.map((type) => type.type.name)}</p>
-      <p>Vikt: {weight}</p>
-      <p>Längd: {height}</p>
+      <img src={sprites.front_default} className="pokemon-img" />
+      <h2>{name}</h2> <p>Type: {types.map((type) => type.type.name)}</p>
+      <p>Vikt: {weight} kg</p>
+      <p>Längd: {height} m</p>
     </div>
   );
 };
